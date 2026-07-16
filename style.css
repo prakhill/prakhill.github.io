@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 40px 20px;
-   background: #f7f4ed;
+    background: #f8f6f1;
 
     font-family: Georgia, "Times New Roman", serif;
-    color: #111;
+    color: #2c2c2c;
 
     font-size: 18px;
     line-height: 1.75;
@@ -15,7 +15,8 @@ body {
     margin: 0 auto;
 }
 
-/* navigation */
+/* Navigation */
+
 .nav {
     font-size: 14px;
     color: #6b6b6b;
@@ -26,11 +27,12 @@ body {
     text-decoration: underline;
 }
 
-/* headings */
+/* Headings */
+
 h1 {
     font-size: 42px;
     font-weight: 600;
-    margin: 14px 0 6px 0;
+    margin: 14px 0 6px;
     line-height: 1.25;
 }
 
@@ -39,28 +41,37 @@ h2 {
     margin: 30px 0 5px;
 }
 
-/* meta */
+/* Meta */
+
 .meta {
     font-size: 14px;
     color: #6b6b6b;
     margin-bottom: 26px;
 }
 
-/* paragraphs */
+/* Paragraphs */
+
 p {
     margin: 18px 0;
 }
 
-/* links */
+/* Links */
+
 a {
     color: inherit;
 }
 
-/* article list */
+/* Writing list */
+
 .post {
     display: block;
     margin: 20px 0;
     text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.post:hover {
+    opacity: 0.7;
 }
 
 .post-title {
@@ -73,10 +84,11 @@ a {
     color: #777;
 }
 
-/* image */
+/* Images */
+
 img {
     width: 100%;
-    margin: 30px 0 10px 0;
+    margin: 30px 0 10px;
     border-radius: 10px;
 }
 
@@ -85,4 +97,31 @@ img {
     font-size: 13px;
     color: #8a8a8a;
     margin-bottom: 28px;
+}
+
+/* Social Icons */
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin: 22px 0 36px;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.socials a:hover {
+    color: #111;
+}
+
+.socials svg {
+    width: 22px;
+    height: 22px;
 }
